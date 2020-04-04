@@ -7,5 +7,6 @@ module.exports = function towelSort (matrix) {
       matrix[i].reverse();
     }
   }
-  return matrix.reduce((acc, subArray) => acc.concat(subArray), [])
+  let arr = (arr, subArray) => arr.concat(subArray);
+  return matrix.reduce(arr, []);
 }
